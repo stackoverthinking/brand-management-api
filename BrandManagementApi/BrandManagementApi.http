@@ -1,0 +1,6 @@
+@BrandManagementApi_HostAddress = http://localhost:5238
+
+GET {{BrandManagementApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
