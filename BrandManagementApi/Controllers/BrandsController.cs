@@ -6,11 +6,11 @@ namespace BrandCRUDProject.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BrandController : ControllerBase
+    public class BrandsController : ControllerBase
     {
         private readonly BrandContext _dbContext;
 
-        public BrandController(BrandContext dbContext)
+        public BrandsController(BrandContext dbContext)
         {
             _dbContext = dbContext;
         }
@@ -47,28 +47,10 @@ namespace BrandCRUDProject.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutBrand(int id, Brand brand)
         {
-            if (id != brand.Id)
-            {
-                return BadRequest();
-            }
+            brand.Id = id;
 
             _dbContext.Entry(brand).State = EntityState.Modified;
-
-            try
-            {
-                await _dbContext.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!BrandExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            await _dbContext.SaveChangesAsync();
 
             return NoContent();
         }
