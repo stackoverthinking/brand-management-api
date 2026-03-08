@@ -1,8 +1,8 @@
-﻿using BrandCRUDProject.Models;
+﻿using BrandManagementApi.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace BrandCRUDProject.Controllers
+namespace BrandManagementApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

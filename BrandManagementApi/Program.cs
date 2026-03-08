@@ -1,4 +1,4 @@
-using BrandCRUDProject.Models;
+using BrandManagementApi.Models;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

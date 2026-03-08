@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace BrandCRUDProject.Models
+namespace BrandManagementApi.Models
 {
     public class BrandContext : DbContext
     {
