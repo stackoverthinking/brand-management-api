@@ -40,7 +40,7 @@ API Endpoints:
 
 GET    /api/brands      Get all brands
 
-GET    /api/brands/{id} Get brand by id 
+GET    /api/brands/{id} Get brand by id
 
 POST   /api/brands      Create a new brand
 
@@ -56,11 +56,11 @@ json
 
 {
 
-&nbsp; "name": "Oppo",
+  "name": "Oppo",
 
-&nbsp; "category": "Cameraphone",
+  "category": "Cameraphone",
 
-&nbsp; "isActive": true
+  "isActive": true
 
 }
 
@@ -73,10 +73,4 @@ Run project then open:
 
 
 https://localhost:{port}/swagger
-
-
-
-Import Postman collection to test API:
-
-BrandManagementApi.postman\_collection.json
 
