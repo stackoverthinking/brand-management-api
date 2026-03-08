@@ -11,6 +11,6 @@ namespace BrandCRUDProject.Models
         [Required]
         [MaxLength(100)]
         public required string Category { get; set; }
-        public int IsActive { get; set; }
+        public bool IsActive { get; set; } = true;
     }
 }
